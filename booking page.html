@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Festive Grid</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+        background: #d33226;
+        padding: 40px 20px;
+    }
+
+    .showcase {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px 30px;
+        max-width: 1000px;
+        margin: auto;
+        text-align: center;
+    }
+
+    .item img {
+        width: 100%;
+        max-width: 260px;
+        height: auto;
+        margin-bottom: 15px;
+    }
+
+    .title {
+        font-size: 18px;
+        font-weight: 600;
+        color: #3a1d0f;
+        margin-bottom: 6px;
+    }
+
+    .highlight {
+        font-size: 22px;
+        font-weight: 700;
+        color: #e67e22;
+        margin-bottom: 6px;
+    }
+
+    .subtitle {
+        font-size: 16px;
+        font-weight: 500;
+        color: #5a2d0c;
+        margin-bottom: 10px;
+    }
+
+    .caption {
+        font-size: 15px;
+        color: #444;
+    }
+
+    /* Mobile */
+    @media (max-width: 600px) {
+        .showcase {
+            grid-template-columns: 1fr;
+        }
+    }
+    .btn{
+        align-items: center;
+    margin-top:50px;
+    display:inline-block;
+    padding:18px 50px;
+    background:#e60000;
+    color:white;
+    text-decoration:none;
+    font-size:18px;
+    border-radius:40px;
+    transition:0.3s;
+}
+
+.btn:hover{
+    background:#b30000;
+    transform:scale(1.05);
+}
+</style>
+</head>
+
+<body>
+
+<div class="showcase">
+
+    <div class="item">
+        <img src="ganpati1.png" alt="">
+        <div class="title">Gramdaivat, Maanacha Pahila</div>
+        <div class="highlight">Shri Kasba Ganpati</div>
+        <div class="caption">Grand Procession</div>
+    </div>
+
+    <div class="item">
+        <img src="ganpati2.png" alt="">
+        <div class="title">Navasacha Ganapati</div>
+        <div class="highlight">Hutatma Babugenu Mandal</div>
+        <div class="subtitle">Trust</div>
+        <div class="caption">Grand Procession</div>
+    </div>
+
+    <div class="item">
+        <img src="mahalaxmi.png" alt="">
+        <div class="title">Karvir Nivasini</div>
+        <div class="highlight">Mahalaxmi, Kolhapur</div>
+        <div class="caption">Grand Procession</div>
+    </div>
+
+    
+
+</div>
+ <a href="C:\Users\Abhijeet\OneDrive\Desktop\booking page3.html" class="btn">BOOKING NOW
+ </a>
+
+</body>
+</html>

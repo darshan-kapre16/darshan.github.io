@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vadyapathak Participation Registration</title>
+
+<style>
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+    
+    padding: 20px;
+}
+
+.toolbar {
+      position: fixed;      /* Key part */
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 80px;
+      background-color: #e17d0a;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      padding: 0 20px;
+      box-sizing: border-box;
+    }
+
+    /* Logo */
+    .toolbar img {
+      height: 40px; /* Small logo size */
+      width: auto;
+      
+    }
+
+    h1{
+    position: center;
+    text-align: center;
+    font-style: oblique;
+    font-size: 70px;
+    font-weight: bold;
+    color: #ff9933;
+}
+
+.container {
+    max-width: 600px;
+    background: #fac104;
+    
+    padding: 25px;
+    border-radius: 10px;
+    margin: auto;
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+
+}
+
+h2 {
+    text-align: center;
+    color: #d35400;
+}
+
+label {
+    font-weight: bold;
+    margin-top: 10px;
+    display: block;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+button {
+    margin-top: 15px;
+    padding: 10px;
+    width: 100%;
+    background-color: #d35400;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #a04000;
+}
+
+.success {
+    color: green;
+    text-align: center;
+    margin-top: 10px;
+}
+
+h3{text-align: center;
+    font-family:'Cinzel', serif;
+    font-size:40px;
+    color:#5b0f18;
+    letter-spacing:1px;
+}
+p{text-align: center;
+    margin-top:10px;
+    font-size:18px;
+    line-height:1.8;
+}
+
+.toolbar1{
+   position: bottom;      /* Key part */
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 80px;
+      background-color: #e17d0a;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      padding: 0 20px;
+      box-sizing: border-box;
+    }
+
+.toolbar1 p{
+    text-align: center;
+    margin:8px 0;
+    font-size:14px;
+    color:hsl(0, 14%, 97%);
+}
+</style>
+</head>
+
+<body>
+     <div class="toolbar">
+    <img src="logo.png" alt="Logo">
+  </div>
+
+<br>
+<br>
+<br>
+<br>
+
+<h1> Sanyukt vadhyapathak</h1>
+
+<div class="container">
+    <h2>Participation Registration Form</h2>
+
+    <form id="registrationForm">
+        
+        <label>Full Name</label>
+        <input type="text" id="name" required>
+
+        <label>Age</label>
+        <input type="number" id="age" min="5" required>
+
+        <label>Gender</label>
+        <select id="gender" required>
+            <option value="">Select</option>
+            <option>Male</option>
+            <option>Female</option>
+            <option>Other</option>
+        </select>
+
+        <label>Category</label>
+        <select id="category" required>
+            <option value="">Select</option>
+            <option>Student</option>
+            <option>Open Participant</option>
+        </select>
+
+        <label>Instrument</label>
+        <select id="instrument" required>
+            <option value="">Select Instrument</option>
+            <option>Dhol</option>
+            <option>Tasha</option>
+            <option>Lezim</option>
+            <option>Halgi</option>
+            <option>Drum</option>
+            <option>Other</option>
+        </select>
+
+        <label>Experience Level</label>
+        <select id="experience" required>
+            <option value="">Select</option>
+            <option>Beginner</option>
+            <option>Intermediate</option>
+            <option>Advanced</option>
+        </select>
+
+        <label>Contact Number</label>
+        <input type="tel" id="contact" pattern="[0-9]{10}" placeholder="10 digit mobile number" required>
+
+        <label>Email</label>
+        <input type="email" id="email" required>
+
+        <label>Upload ID / Photo (Optional)</label>
+        <input type="file" accept="image/*,.pdf">
+
+        <button type="submit">Register</button>
+
+        <div class="success" id="successMessage"></div>
+
+    </form>
+</div>
+
+<script>
+document.getElementById("registrationForm").addEventListener("submit", function(e) {
+    e.preventDefault();
+    document.getElementById("successMessage").innerText = 
+        "Registration Successful! We will contact you soon.";
+    this.reset();
+});
+</script>
+
+<h3>Rules and Regulations</h3>
+
+<p>1.After filling out this registration form, your initial registration has been completed and this is not the final registration.
+
+It is mandatory for you to come to the practice location and register after the practice starts.<br>
+
+
+2.After filling the registration form, you will be given further instructions from time to time via WHATSAPP.<br>
+
+3.The team's practice will begin soon and all information related to it will be provided. You can complete your final registration before the practice begins.<br>
+
+4.Since space in the team is limited, priority will be given on a first-come, first-served basis.<br>
+
+5.No registration will be accepted under any pretext after all seats are filled.<br>
+
+6.Strict adherence to all instructions and rules given by the team is mandatory.<br>
+
+7.Practice and practice time are mandatory for everyone.<br>
+
+8.If you have any problems with the team's practice times due to work or other constraints, please contact us.<br>
+
+9.The team may cancel the registration at any time and the team will not be obligated to answer anyone for this.</p>
+<br>
+<br>
+<div class="toolbar1">
+    <p style="margin-top:15px;"><strong>Contact us:</strong></p>
+            <p>+91 000000000</p>
+
+            
+</div>
+</body>
+</html>
